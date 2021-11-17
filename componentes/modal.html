@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <!-- agregamos cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+</head>
+<!-- la grid sirve para dividir contenido en una row -->
+
+<body>
+
+    <div class="container py-4">
+
+        <!-- data-bs-togle, abre el modal, pero cual?, pues le indicamos con el target -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mi-modal">Abrir modal</button>
+        <!-- para crear un modal -->
+        <!-- fade es para efecto mas suave -->
+        <!-- data-bs-backdrop es para no se cierre el modal cuando le das click fuera de este, sino tienes que dar click en los botones de cancelar o la X para cerrar -->
+        <div class="modal fade " id="mi-modal" data-bs-backdrop="static">
+            <!-- modal-dialog-scrollable es para cuando el texto es muy largo, este nos da un scroll -->
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- ahora dividimos el modal en cabecera, cuerpo y footer -->
+                    <!-- cabecera -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Este es el titulo</h5>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis hic consequatur officia accusamus ab sequi ipsum beatae ipsam necessitatibus architecto eos aliquam, incidunt corporis nihil minus, adipisci amet expedita neque!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat praesentium impedit quam dolore molestiae, labore non magni doloribus in excepturi animi ratione explicabo quod consectetur. Sequi commodi omnis ipsum.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- data-bs-dismiss es para cerrar el modal -->
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

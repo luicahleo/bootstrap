@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <!-- agregamos cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+</head>
+<!-- la grid sirve para dividir contenido en una row -->
+
+<body>
+
+    <div class="container py-4">
+
+        <!-- para iniciar el carousel, usamos div, con clase carousel slide -->
+        <!--  tambien tenemos que avisar al JS que esto es un carousel, con data-bs-ride="carousel" -->
+        <!-- tambien le damos el id al carousel, el cual usaremos para los botones de prev y next -->
+        <div id="slider-codersfree" class="carousel slide" data-bs-ride="carousel">
+
+
+            <!-- para crear los indicadores de imagenes del carousel -->
+            <div class="carousel-indicators">
+                <!-- de igual manera, tenemos que indicar cual es la imagen active, para eso pasamos una clase active -->
+                <button class="active" data-bs-target="#slider-codersfree" data-bs-slide-to="0"></button>
+                <button data-bs-target="#slider-codersfree" data-bs-slide-to="1"></button>
+                <button data-bs-target="#slider-codersfree" data-bs-slide-to="2"></button>
+            </div>
+
+
+
+
+            <!-- dentro otro div, con class carousel inner -->
+            <!-- para cambiar el efecto de las imagenes carousel-fade -->
+            <div class="carousel-inner carousel-fade">
+                <!-- ahora incluyo las imagenes, carousel-iem -->
+                <!-- ahora definimos cual va a ser la imagen activa, cuando la pagina cargue, cual se va a mostrar primero, para eso usamos active -->
+
+                <!-- tambien le ponemos la el atributo de class d-block, poque las imagenes vienen con el display-in-line, tambien el ancho w-100, para que ocupe el 100% del ancho -->
+                <!-- para setear el tiempo de muestra de cada imagen, pasamos data-bs-interval al JS -->
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="d-block w-100" src="img/image1.jpg" alt="">
+
+                    <!-- para agregar texto a la imagen -->
+                    <!-- para ocultar el texto en pantallas pequeñas usamos d-none, despues d-md-block  que es para pantallas medianas y grandes-->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Primera imagen</h5>
+                        <p>Descripcion de primera imagen</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="img/image2.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Segunda imagen</h5>
+                        <p>Descripcion de segunda imagen</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img class="d-block w-100" src="img/image3.jpg" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tercera imagen</h5>
+                        <p>Descripcion de tercera imagen</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- creamos botones para desplazar el carousel -->
+            <!-- ahora tambien pasamos informacion al JS de los botones para desplazar imagenes con data-bs-target y data-bs-slide-->
+            <button class="carousel-control-prev" data-bs-target="#slider-codersfree" data-bs-slide="prev">
+                <!--  ahora ponemos los iconos de nuestros botones -->
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#slider-codersfree" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
