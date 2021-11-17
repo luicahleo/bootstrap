@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <!-- agregamos cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
+</head>
+<!-- la grid sirve para dividir contenido en una row -->
+
+<body>
+
+    <div class="container py-4">
+
+        <div class="d-flex">
+
+
+            <div class="p-4 me-4 border"> Border </div>
+            <div class="p-4 me-4 border-top"> Border - top </div>
+            <div class="p-4 me-4 border-end"> Border - end</div>
+            <div class="p-4 me-4 border-bottom"> Border - bottom</div>
+            <div class="p-4 me-4 border-start"> Border - start</div>
+        </div>
+        <hr>
+        <div class="d-flex mt-4">
+            <!-- ahora si quiero quitar algun borde -->
+            <div class="p-4 me-4 border"> Border </div>
+            <div class="p-4 me-4 border border-top-0"> Border-top-0 </div>
+            <div class="p-4 me-4 border border-end-0"> border-end-0</div>
+            <div class="p-4 me-4 border border-bottom-0"> Border - bottom 0</div>
+            <div class="p-4 me-4 border border-start-0"> Border - start 0</div>
+        </div>
+
+        <hr>
+        <!-- para pone borders de otro color -->
+        <div class="d-flex mt-4">
+
+            <div class="p-4 me-4 border border-primary">dato</div>
+            <div class="p-4 me-4 border border-secondary">dato</div>
+            <div class="p-4 me-4 border border-success">dato</div>
+            <div class="p-4 me-4 border border-danger">dato</div>
+            <div class="p-4 me-4 border border-dark">dato</div>
+            <div class="p-4 me-4 border border-info">dato</div>
+            <div class="p-4 me-4 border border-light">dato</div>
+        </div>
+
+        <hr>
+        <!-- para pone borders grosor -->
+        <div class="d-flex mt-4">
+
+            <div class="p-4 me-4 border border-1">border-1</div>
+            <div class="p-4 me-4 border border-2">border-2</div>
+            <div class="p-4 me-4 border border-3">border-3</div>
+            <div class="p-4 me-4 border border-4">border-4</div>
+            <div class="p-4 me-4 border border-5">border-5</div>
+
+        </div>
+</body>
+
+</html>
