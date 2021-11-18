@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap</title>
+    <!-- agregamos cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- para usar popovers, necesitams el bundle, pero tambien el script para el componente  -->
+
+</head>
+<!-- la grid sirve para dividir contenido en una row -->
+
+<body>
+
+    <div class="container py-4">
+        <hr>
+        <!-- el contenido sobrepasa el borde -->
+        <div class="row">
+            <div class="col p-4 border" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+        </div>
+
+
+        <hr>
+
+        <!-- el contenido no sobrepasa el borde con overflow-hidden -->
+
+        <div class="row">
+            <div class="col p-4 border overflow-hidden" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-hidden" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-hidden" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-hidden" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+        </div>
+
+        <hr>
+
+        <!-- le ponemos scroll en x y y -->
+        <div class="row">
+            <div class="col p-4 border overflow-scroll" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-scroll" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-scroll" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-scroll" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+        </div>
+
+        <hr>
+
+        <!-- dejamos que bootstrap le ponga scroll en x o y si lo detecta -->
+
+        <div class="row">
+            <div class="col p-4 border overflow-auto" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-auto" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-auto" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-auto" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+        </div>
+
+        <hr>
+        <!-- hacemos visible el overflow si es que esta escondido -->
+        <div class="row">
+            <div class="col p-4 border overflow-visible" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-visible" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-visible" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+            <div class="col p-4 border overflow-visible" style="height: 9rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod aliquam esse, incidunt a ea obcaecati blanditiis aut enim sit omnis explicabo tenetur. Reiciendis vero ex aut sequi magnam veritatis.</div>
+        </div>
+
+    </div>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
